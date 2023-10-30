@@ -1,3 +1,7 @@
+package Player;
+
+import Player.Droid.Droid;
+
 public class Player {
 
 

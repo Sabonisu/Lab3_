@@ -1,3 +1,7 @@
+package Player.Droid.Types;
+import Player.Player;
+import Player.Droid.Droid;
+
 public class TankDroid extends Droid {
     private boolean tauntUsed = false;
     public TankDroid(String name) {

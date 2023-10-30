@@ -1,3 +1,10 @@
+package GameProcess;
+import Player.Droid.Types.GlassDroid;
+import Player.Droid.Types.TankDroid;
+import Player.Droid.Types.PoisonDroid;
+import Player.Droid.Droid;
+import Player.Player;
+
 import java.util.Scanner;
 
 public class Main {

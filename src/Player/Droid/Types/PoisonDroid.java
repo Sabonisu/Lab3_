@@ -1,3 +1,7 @@
+package Player.Droid.Types;
+import Player.Player;
+import Player.Droid.Droid;
+
 public class PoisonDroid extends Droid {
     private int skillDamage;
 

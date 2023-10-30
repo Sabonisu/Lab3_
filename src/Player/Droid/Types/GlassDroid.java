@@ -1,3 +1,7 @@
+package Player.Droid.Types;
+import GameProcess.DroidBattle;
+import Player.Droid.Droid;
+import Player.Player;
 public class GlassDroid extends Droid {
     public GlassDroid(String name) {
         super(name, 4, 3,"DamageDealer",1);

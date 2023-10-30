@@ -1,3 +1,10 @@
+package GameProcess;
+
+import Player.Droid.Droid;
+import Player.Player;
+import Player.Droid.Types.TankDroid;
+
+
 import java.util.Scanner;
 public class DroidBattle {
     public static void fightPvP(Player[] players) {

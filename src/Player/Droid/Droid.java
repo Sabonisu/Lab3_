@@ -1,3 +1,7 @@
+package Player.Droid;
+
+import Player.Player;
+
 public class Droid {
     private String name;
     private double health;
