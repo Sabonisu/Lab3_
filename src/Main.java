@@ -10,20 +10,15 @@ public class Main {
             System.out.println("0. Вихід");
 
             switch (DroidBattle.getPlayerChoice(2)) {
-                case 1:
+                case 1 -> {
                     Player[] player = new Player[2];
                     player[0] = createPlayer();
                     player[1] = createPlayer();
                     DroidBattle.fightPvP(player);
-                    break;
-                case 2:
-                    System.out.println("Недоступно");
-                    break;
-                case 0:
-                    x = 0;
-                    break;
-                default:
-                    System.out.println("Невірний вибір. Будь ласка, виберіть знову.");
+                }
+                case 2 -> System.out.println("Недоступно");
+                case 0 -> x = 0;
+                default -> System.out.println("Невірний вибір. Будь ласка, виберіть знову.");
             }
 
         } while (x != 0);
