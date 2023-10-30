@@ -44,7 +44,7 @@ public class DroidBattle {
                 String droidStatus = (player.getDroids()[numDrones].isAlive()) ? "" : " мертвий";
                 System.out.println((numDrones + 1) + ". " + player.getDroids()[numDrones] + droidStatus);
             }
-            choice = getPlayerChoice(numDrones);
+            choice = getPlayerChoice();
             if (choice >= 1 && choice <= numDrones) {
                 Droid selectedDroid = player.getDroids()[choice - 1];
                 if (selectedDroid.isAlive()) {
@@ -67,7 +67,7 @@ public class DroidBattle {
         else{System.out.println("2. Використати навичку");}
         boolean shouldContinue = true;
         do {
-            int choice = getPlayerChoice(2);
+            int choice = getPlayerChoice();
             switch (choice) {
             case 1 -> {
                 while (true) {
@@ -100,7 +100,7 @@ public class DroidBattle {
             droid.setPoison(droid.getPoison() - 1);
         }
     }
-    public static int getPlayerChoice(int numChoices) {
+    public static int getPlayerChoice() {
         Scanner scanner = new Scanner(System.in);
         int choice;
         System.out.print("--> ");
@@ -128,7 +128,7 @@ public class DroidBattle {
               else {System.out.println();
               }
           }
-          choice = getPlayerChoice(numDrones);
+          choice = getPlayerChoice();
           if(tauntedBy != -1){
               if (choice - 1 == tauntedBy) {
                   return opponent.getDroids()[choice - 1];

@@ -9,7 +9,7 @@ public class Main {
             System.out.println("2. BossFight");
             System.out.println("0. Вихід");
 
-            switch (DroidBattle.getPlayerChoice(2)) {
+            switch (DroidBattle.getPlayerChoice()) {
                 case 1 -> {
                     Player[] player = new Player[2];
                     player[0] = createPlayer();
@@ -22,20 +22,6 @@ public class Main {
             }
 
         } while (x != 0);
-    }
-    public static Droid[] createDroidCopies(Droid[] originalDroids) {
-        Droid[] copies = new Droid[originalDroids.length];
-        for (int i = 0; i < originalDroids.length; i++) {
-            Droid originalDroid = originalDroids[i];
-            if (originalDroid instanceof TankDroid) {
-                copies[i] = new TankDroid(originalDroid.getName());
-            } else if (originalDroid instanceof PoisonDroid) {
-                copies[i] = new PoisonDroid(originalDroid.getName());
-            } else if (originalDroid instanceof GlassDroid) {
-                copies[i] = new GlassDroid(originalDroid.getName());
-            }
-        }
-        return copies;
     }
 
     public static void printTeams(Player[] player){
